@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    font-family: "Pangolin", cursive;
+}
+
+/* Main Page */
+
+.mainbar {
+    margin: 1.5rem; 
+}
+
+.listnavbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.itemnavbar .link {
+    margin: 10px;
+    text-decoration: none;
+    background: rgb(244,58,17);
+    background: linear-gradient(90deg, rgba(244,58,17,1) 0%, rgba(42,13,43,1) 100%);
+    border-radius: 7px;
+    padding: 0.5em;
+    color: #fff;
+    text-align: center;
+}
+
+.itemnavbar  :hover {
+    color: #F5EC55;
+    box-shadow: 10px 10px #1E0C25;
+    transition: 1s;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header img {
+    width: 70%;
+    border-radius: 10px;
+    margin-right: 5rem;
+    float: right;
+    margin-top: 5rem;
+}
+
+.header .mesage-header {
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+.header .mesage-header h1 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 5rem;
+    background: -webkit-linear-gradient(#F45B09, #5B145D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header .mesage-header h3 {
+    color: #F45B09;
+}
+
+/* For mobile phones: */
+
+@media only screen and (max-width: 768px) {
+    
+    .header {
+        display: block;
+    }
+
+    .header .mesage-header  {
+        width: 70%;
+    }
+
+    .header .mesage-header h1 {
+        font-size: 4rem;
+    }
+
+    .header img {
+        width: 70%;
+        border-radius: 10px;
+        margin-right: 5rem;
+        float: center;
+        margin-top: 1rem;
+    }
+  }
+
+  /* Content */
+
+  .content {
+    margin-top: 8rem;
+    margin-left: 12%;
+    align-items: center;
+    width: 75%;
+    background: rgb(244,58,17);
+    background: linear-gradient(90deg, rgba(244,58,17,1) 0%, rgba(42,13,43,1) 100%);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+
+  .content .grid-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .content .grid-content img {
+    width: 10rem;
+    padding: 1rem;
+  }
+
+  .content .grid-content a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* For mobile phones: */
+
+@media only screen and (max-width: 768px) {
+    .content {
+        margin-top: 4rem;
+        padding: 1rem;
+    }
+
+    .content .grid-content {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+      }
+}
+
